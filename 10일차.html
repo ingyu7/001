@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="ko-kr">
+     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="">
+        <meta name="Description" content="">
+        <title> </title>
+         <style>
+             .after{border:5px solid red}
+             .after:after{clnmtent:'';}
+             .after img{float:left}
+             
+             .wrap{border:5px solid blue;
+                    float:left; width:100%}
+             .wrap div {height:100px;width:50%}
+             .wrap .box1{background-color: yellow; float:left}
+             .wrap .box2{background-color: green; float:left}
+         ㅓ
+             h1{background-color: gray}
+             .rel{background-color: tomato;
+                  position:relative;
+                  
+                  }
+             .abs{background-color: skyblue;
+              position:absolute;
+             top:0; left:0;}
+             .fixed{background-color: green;
+             position:fixed;
+             left:100px; left:100px}
+             .
+             .static{background-color:blue;
+                 position: sticky;
+                 top:110px; left:130px;
+             }
+             
+           
+         </style>
+         
+         
+    </head>
+    <body>
+      <h1>:after</h1>
+      <div class="after">
+          <img src="images/bg2.gif" alt=""/>이미지에 float:left하면 이미지가 왼졲으로 배치된다.
+        </div>
+        
+      <h1>:float</h1>
+      <div class="wrap">
+          <div class="box1">box1</div>
+          <div class="box2">box2</div>
+        
+        </div>
+        
+        <h1>position:relative</h1>
+        <div class="rel">relative 는 자기자신이 기준</div>
+        <h1>position:absolute</h1>
+        <div class="abs">자신을 포함하고 있는건 테이닝을 기준으로</div>
+        
+        <h1>position:fixed</h1>
+        <div class="fixed">fixed는 입력한 값에 고정된 상태로</div>
+        <h1>position:sticky</h1>
+        <div class="sticky"> sticky입력한 값에 도달하면 고정</div>
+        
+        <h1>position:static</h1>
+        <div class="static">static 기본값</div>
+        
+    </body>
+ </html>
